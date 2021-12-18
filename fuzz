@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+gradle jxmpp-jid:fuzz \
+	   --class=org.jxmpp.jid.JidFuzzTest \
+	   --method=fuzzJid \
+	   --time=10s \
+	   --stacktrace
